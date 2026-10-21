@@ -1,0 +1,14 @@
+# Illustrative simulator assumptions only; this is not fitted to or validated by Hillstrom.
+seed: 20261018
+customers: 2000
+periods: 8
+contact_cap: 3
+contact_capacity_per_period: 400
+fatigue_strength: 0.12
+distribution_shift: 0.15
+conversion_value: 45.0
+action_costs:
+  mens_email: 0.01
+  womens_email: 0.01
+  retention_offer: 5.0
+  service_reminder: 0.25

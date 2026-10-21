@@ -1,0 +1,13 @@
+dataset: hillstrom_email_experiment
+source_url: https://www.minethatdata.com/Kevin_Hillstrom_MineThatData_E-MailAnalytics_DataMiningChallenge_2008.03.20.csv
+manual_download_page: https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html
+raw_path: data/raw/hillstrom.csv
+processed_path: data/processed/hillstrom.parquet
+provenance_path: data/processed/hillstrom.provenance.json
+report_dir: reports/generated
+random_seed: 20261018
+expected_treatments: [No E-Mail, Mens E-Mail, Womens E-Mail]
+expected_rows: 64000
+required_columns: [recency, history, mens, womens, newbie, zip_code, channel, segment, visit, conversion, spend]
+outcomes: [visit, conversion, spend]
+pre_treatment_features: [recency, history, history_segment, mens, womens, newbie, zip_code, channel]

@@ -1,0 +1,37 @@
+# Costs are explicit illustrative assumptions, not observed Hillstrom facts.
+currency: USD
+value_outcome: spend
+actions:
+  no_action:
+    cost: 0.0
+    capacity: null
+    eligibility: all
+    evidence: observed_control
+  mens_email:
+    cost: 0.01
+    capacity: null
+    eligibility: all
+    evidence: randomized_email_treatment
+    cost_assumption: illustrative_email_delivery_cost
+  womens_email:
+    cost: 0.01
+    capacity: null
+    eligibility: all
+    evidence: randomized_email_treatment
+    cost_assumption: illustrative_email_delivery_cost
+# The remaining interventions have no experimental support in this dataset.
+  retention_offer:
+    cost: 5.0
+    capacity: 1000
+    eligibility: simulated_only
+    evidence: simulated
+  service_reminder:
+    cost: 0.25
+    capacity: 2000
+    eligibility: simulated_only
+    evidence: simulated
+  rewards_incentive:
+    cost: 2.0
+    capacity: 1500
+    eligibility: simulated_only
+    evidence: simulated

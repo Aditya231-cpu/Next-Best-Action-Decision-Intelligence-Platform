@@ -1,0 +1,18 @@
+seed: 20261018
+split:
+  train_fraction: 0.60
+  validation_fraction: 0.20
+  test_fraction: 0.20
+  stratify_by: treatment
+assignment_probabilities:
+  No E-Mail: 0.3333333333333333
+  Mens E-Mail: 0.3333333333333333
+  Womens E-Mail: 0.3333333333333333
+economics:
+  outcome: spend
+  mens_email_cost_per_customer_usd: 0.01
+  womens_email_cost_per_customer_usd: 0.01
+allocation:
+  budget_usd: 25.0
+  mens_email_capacity: null
+  womens_email_capacity: null
